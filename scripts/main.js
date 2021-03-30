@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $(".nav-link").hover(function() {
-        $(this).css("padding-top", "0px");
+        $(this).css("padding-top", "3px");
         $(this).animate({
-            "padding-top": "2px"
+            "padding-top": "5px"
         }, 200, function() {});
     });
     
