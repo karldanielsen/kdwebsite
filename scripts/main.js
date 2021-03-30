@@ -19,14 +19,20 @@ function starFall(star) {
     var starLeftStart = parseInt($(star).css("left").slice(0,-2));
     $(star).animate({
         "opacity": "1",
-        "top": (400+starTopStart).toString()+"px",
-        "left": (400+starLeftStart).toString()+"px"
-    }, 2000, "linear", function() {
+        "top": (200+starTopStart).toString()+"px",
+        "left": (200+starLeftStart).toString()+"px"
+    }, 1000, "linear", function() {
         $(star).animate({
-            "opacity":"0"
-        },200, function() {
-            $(star).css("top", Math.floor(Math.random()*150).toString()+"px")
-            $(star).css("left",Math.floor(Math.random()*800).toString()+"px")
+            "opacity": "0",
+            "top": (400+starTopStart).toString()+"px",
+            "left": (400+starLeftStart).toString()+"px"
+        }, 1000, "linear", function() {
+            $(star).animate({
+                "opacity":"0"
+            },200, function() {
+                $(star).css("top", Math.floor(Math.random()*150).toString()+"px")
+                $(star).css("left",Math.floor(Math.random()*800).toString()+"px")
+            });
         });
     });
 }
