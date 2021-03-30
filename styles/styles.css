@@ -19,3 +19,10 @@ body {
 .btn:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.tick {
+    border:1px solid #343a40;
+    border-radius:.25rem;
+    font-size:12px;
+    padding:0px 2px 0px 2px;
+}
