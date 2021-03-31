@@ -26,11 +26,34 @@
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="scripts/main.js"></script>
     
   </head>
 
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="archesModal" tabindex="-1" role="dialog" aria-labelledby="archesModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav style="background-color:rgba(0,0,0,0)" class="navbar navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><img src="headshot.png" style="width:35px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +80,8 @@
     <div id="climbing-content" style="padding-top:10px">
       <div class="container">
         <div class="row">
-          <div style="height:900px;float:left;width:30%;min-width:280px;" class="col-sm tick">
-            <span style="font-size:24px">Tick List:</span>
+          <div style="height:650px;float:left;width:30%;min-width:280px;background-image:url(paper.png)" class="col-sm tick">
+            <span style="font-size:22px">&nbspProgress Diary:</span>
             <ul style="list-style:none">
               <li class="tick">March 30, 2021<br>Cliffs of Id:
                 <ul><li>2 v5's, SO close on some v6's</li></ul></li>
@@ -66,19 +89,21 @@
                 <ul><li>3 v5's</li></ul></li>
             </ul>
           </div>
+          
           <div style="width:70%">
-          <div style="width:305px;height:200px;display:inline-block;margin-bottom:5px;position:relative" class="col-sm fancy">
-            <span style="position:absolute;left:140px;top:30px">Arches, March 2020</span>
-            <div class="btn btn-dark" style="height:inherit">
-              <img src="valley.jpeg" style="border-radius:5px; height:186px">
+            <div class="col-sm fancy trip">
+              <span style="position:absolute;left:140px;top:30px">Arches, March 2020</span>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#archesModal" style="height:inherit">
+                <img src="valley.jpeg" style="border-radius:5px; height:186px">
+              </button>
             </div>
-          </div>
-          <div style="color:white;width:305px;height:200px;display:inline-block;margin-bottom:5px" class="col-sm fancy">
-            <span style="position:absolute;left:140px;top:30px">Joe's Valley, March 2020</span>
-            <div class="btn btn-dark" style="height:inherit">
-              <img src="climb.jpeg" style="border-radius:5px; height:186px">
+          
+            <div style="color:white" class="col-sm fancy trip">
+              <span style="position:absolute;left:140px;top:30px">Joe's Valley, March 2020</span>
+              <div class="btn btn-dark" style="height:inherit">
+                <img src="climb.jpeg" style="border-radius:5px; height:186px">
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
