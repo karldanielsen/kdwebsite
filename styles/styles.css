@@ -27,6 +27,7 @@ body {
     font-size:12px;
     padding:0px 2px 0px 2px;
     margin-bottom:2px;
+    max-width:90%;
 }
 
 .trip {
