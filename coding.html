@@ -75,6 +75,41 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content"  style="background-image:url(paper.png)">
+          <div class="modal-header">
+            <h5 class="modal-title" id="messageModalLabel">Message Me!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            A simple combination of a couple of AWS resources allows you to use the
+            text entry form below to message my phone!
+            <br><br>
+            If you want a response, be sure to include an email address or phone number,
+            along with your name. Your message is encrypted throughout the whole process
+            and not stored anywhere, so information is safe.
+            <br><br>
+            If you want to set one up yourself, ask me for the AWS cloudformation template,
+            which can build a messaging API for you with just two or three pieces of info.
+            <br>
+            <form>
+              <div class="form-group" style="text-align:center">
+                <button id="msgSubmit" type="submit" class="btn btn-primary" style="margin-bottom:3px;width:300px">Send<button>
+                <textarea class="form-control" id="snsTextArea" rows="3"></textarea>
+                <small id="snsHelp" class="form-text text-muted" style="text-align:left">
+                  Note: API and notification throttling are in effect. Any attempts to spam this messager will
+                  result in a quick shutdown at no loss to myself. Don't bother.
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <nav style="background-color:rgba(0,0,0,0)" class="navbar navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><img src="headshot.png" style="width:35px"></a>
@@ -107,6 +142,12 @@
             <span>Digital Assets Portfolio Builder</span>
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#cryptoModal" style="height:inherit">
               <img src="valley.jpeg" style="border-radius:5px; height:186px">
+            </button>
+          </div>
+          <div class="col-sm trip" style="width:375px">
+            <span>Message Me!</span>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#messageModal" style="height:inherit">
+              <img src="messageMeThumbnail.png" style="border-radius:5px; height:186px">
             </button>
           </div>
         </div>
