@@ -151,13 +151,20 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content"  style="background-image:url(paper.png)">
           <div class="modal-header">
-            <h5 class="modal-title" id="tcpModalLabel">Genomics Algorithms</h5>
+            <h5 class="modal-title" id="tcpModalLabel">File Transfer</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            
+            A basic module to transfer files between two systems using ports and
+            IP addresses via built-in C++ TCP libraries. Message validation is
+            performed via CRC (which can be cheated given that the CRC is hard-
+            coded and the code is public). Built primarily as an informative thing,
+            due to the lack of real-world-applicable networking taught in college.
+            <br><br>
+            Also includes a separate version of the server which processes clients
+            requests with threads for large client requests.
             <br><br>
             Source Code:
             <button class="btn btn-success">
@@ -228,7 +235,7 @@
             </button>
           </div>
           <div class="col-sm trip" style="width:375px">
-            <span>File Transfer w/ CRC</span>
+            <span>TCP File Transfer w/ CRC</span>
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#tcpModal" style="height:inherit">
               <img src="tcpImage.png" style="border-radius:5px; height:186px">
             </button>
