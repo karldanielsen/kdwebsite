@@ -49,13 +49,13 @@
             Estimated Completion Date: 4/9/2021
             Link will be available then.
             <br><br>
-            A combination of an AWS live database updated with binance API coin information
+            A combination of an AWS live database and stored binance API coin information
             will allow users to adjust, save, and analyse a cryptocurrency portfolio against
-            the historical market data and other portfolios. This will be achieved through a
-            number of numerical readouts and charts.
+            the historical market data. This will be achieved through a number of numerical
+            readouts and charts.
             <br><br>
             This is NOT a trading dashboard, it is intended for use in visually investigating
-            the natural relationships between coins, and in discovering how to well-diversify
+            the natural relationships between coins, and for discovering how to well-diversify
             in a market dominated by one asset, when it is often difficult to do so.
             <br><br>
             The AWS templates and code are proprietary, but will be put up if ever publicly
@@ -96,7 +96,7 @@
             <br>
             <form style="background-color:#eeeeee; border: 1px solid black; border-radius:5px;padding:5px" onsubmit="return false">
               <div class="form-group" style="text-align:center">
-                <button id="msgSubmit" class="btn btn-primary" style="margin-bottom:3px;width:200px" onclick="return getData()">Send</button>
+                <button id="msgSubmit" class="btn btn-primary" style="margin-bottom:3px;width:200px">Send</button>
                 <textarea class="form-control" id="snsTextArea" rows="3"></textarea>
                 <small id="snsHelp" class="form-text text-muted" style="text-align:left">
                   Note: API and notification throttling are in effect. Any attempts to spam this messager will
@@ -127,11 +127,12 @@
             <br><br>
             This project was built to benefit a group of UCLA geneticists with
             little computer science background, to help them isolate and study
-            the differences in the viral genetic code from that of other
-            coronaviruses, so they could target their research.
+            the differences between benign coronaviruses and covid-19. The end
+            goal was helping them target their research on the specific genes
+            that make covid unique.
             <br><br>
             I have no idea if it directly contributed to the effort to produce
-            a cure, but it was very satisfying knowing I doing my part in
+            a cure, but it was very satisfying knowing I was doing my part in
             joining the worldwide effort to end the pandemic.
             <br><br>
             Source Code:
@@ -164,7 +165,8 @@
             due to the lack of real-world-applicable networking taught in college.
             <br><br>
             Also includes a separate version of the server which processes clients
-            requests with threads for large client requests.
+            requests with threads when they are large enough to block server
+            processing.
             <br><br>
             Source Code:
             <button class="btn btn-success">
