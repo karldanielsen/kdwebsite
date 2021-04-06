@@ -5,9 +5,9 @@ async function message() {
                                      method: 'POST',
                                      mode: 'cors',
                                      cache: 'no-cache',
-                                     body: {
-                                         'message':JSON.stringify(msg)
-                                     }
+                                     body: JSON.stringify({
+                                         'message':msg
+                                     })
                                  }
                                 );
     return response;
