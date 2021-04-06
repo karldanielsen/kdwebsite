@@ -6,8 +6,9 @@ async function message() {
                                      mode: 'cors',
                                      cache: 'no-cache',
                                      body: {
-                                         'message':msg
+                                         'message':JSON.stringify(msg)
                                      }
                                  }
                                 );
+    return response;
 }
