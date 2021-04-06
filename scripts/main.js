@@ -18,6 +18,10 @@ $(document).ready(function() {
             starFall(obj);
         }, 2300+i*600);
     });
+
+    $("#msgSubmit").click(function() {
+        message();
+    });
 });
 
 

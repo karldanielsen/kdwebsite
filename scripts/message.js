@@ -1,9 +1,3 @@
-$(document).ready(function() {
-    $("#msgSubmit").click(function() {
-        message();
-    });
-});
-
 async function message() {
     var msg = $("#snsTextArea").val();
     console.log(msg)
