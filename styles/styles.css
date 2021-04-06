@@ -1,5 +1,6 @@
 body {
     font-family: Consolas, monaco, monospace;
+    overflow:hidden;
 }
 
 .fancy {
@@ -31,7 +32,7 @@ body {
 }
 
 .trip {
-    width:305px;
+    width:335px;
     weight:200px;
     display:inline-block;
     margin-bottom:5px;
@@ -46,4 +47,12 @@ body {
 
 .modal-header {
     border-bottom:1px solid black;
+}
+
+.link {
+    color:black;
+}
+
+.link:hover {
+    text-decoration: none;
 }
