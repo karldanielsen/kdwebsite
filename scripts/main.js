@@ -1,7 +1,7 @@
 $(document).ready(function() {
     if(parseInt($("body").css("width").slice(0,-2))< 700){
         $("#start").append(
-            "<div>Hey! Can't help but notice you're browsing on mobile.<br>"+
+            "<div style=\"background-color:white\">Hey! Can't help but notice you're browsing on mobile.<br>"+
              "This is a personal website, not built to be viewed on screens<br>"+
              "thinner than 700px. Proceed at your own risk!</div>"
         );
